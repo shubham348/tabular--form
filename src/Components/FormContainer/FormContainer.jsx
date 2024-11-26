@@ -13,7 +13,7 @@ const TABS = [
 ];
 
 const modules={
-    personalInformation:
+    personalInformation:""
 }
 
 const FormContainer = () => {
