@@ -3,6 +3,7 @@ import { generateTabId } from "../../utils/tabutils";
 import Tabs from "../Tabs/Tabs";
 import "./formContainer.scss";
 import TabContent from "../Tabs/TabContent";
+import PersonalInformation from "./Components/PersonalInformation";
 
 const TABS = [
   "Personal Information",
@@ -12,9 +13,9 @@ const TABS = [
   "LifeStyle Information",
 ];
 
-const modules={
-    personalInformation:""
-}
+const modules = {
+  personalInformation: "",
+};
 
 const FormContainer = () => {
   const [activeTab, setActiveTab] = useState("personalInformation");
@@ -28,7 +29,8 @@ const FormContainer = () => {
   }
 
   return (
-    <div className="form__container ">
+    <div className="form">
+      <div className="profile__container"></div>
       <div className="form__layout row main-content">
         <div className="left-section col-lg-4">
           <Tabs
@@ -43,7 +45,7 @@ const FormContainer = () => {
             isActive={getTabStatus("personalInformation")}
             value={"personalInformation"}
           >
-            Personal information
+            <PersonalInformation/>
           </TabContent>
           <TabContent
             isActive={getTabStatus("familyDetails")}

@@ -1,0 +1,11 @@
+.input__container {
+  border: 2px solid black;
+  padding: 4px 0;
+}
+.input__field {
+  border: none;
+  &:focus {
+    border: none;
+    outline: none;
+  }
+}
