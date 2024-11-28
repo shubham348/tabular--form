@@ -1,11 +1,22 @@
 .input__container {
-  border: 2px solid black;
-  padding: 4px 0;
+  border-radius: 8px;
+  height: 48px;
+  border: 2px solid grey;
+  padding: 4px 8px;
 }
+
 .input__field {
   border: none;
+  height: 100%;
   &:focus {
     border: none;
     outline: none;
   }
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+.w-90 {
+  width: 90%;
 }
